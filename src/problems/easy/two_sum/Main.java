@@ -1,4 +1,4 @@
-package problems.easy.twosum;
+package problems.easy.two_sum;
 
 import java.io.IOException;
 import java.util.HashMap;
