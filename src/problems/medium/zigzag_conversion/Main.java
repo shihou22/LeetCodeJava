@@ -1,4 +1,4 @@
-package problems;
+package problems.medium.zigzag_conversion;
 
 import java.io.IOException;
 
