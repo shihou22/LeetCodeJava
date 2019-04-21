@@ -71,12 +71,14 @@ public class Main {
 			return depth;
 		}
 		int res = depth;
-		if (left != null) {
-			res = Integer.max(chkDepthOrigin(left.left, left.right, depth + 1), res);
-		}
-		if (right != null) {
-			res = Integer.max(chkDepthOrigin(right.left, right.right, depth + 1), res);
-		}
+		//		if (left != null) {
+		//			int wk = chkDepthOrigin(left.left, left.right, depth + 1);
+		//			res = Math.max(wk, res);
+		//		}
+		//		if (right != null) {
+		//			int wk = chkDepthOrigin(right.left, right.right, depth + 1);
+		//			res = Math.max(wk, res);
+		//		}
 		return res;
 	}
 
