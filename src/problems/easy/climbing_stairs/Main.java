@@ -6,13 +6,13 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 		int res = 0;
-		res = new Main().climbStairs(1);//1
-		System.out.println(res);
-		res = new Main().climbStairs(2);//2
-		System.out.println(res);
-		res = new Main().climbStairs(3);//3
-		System.out.println(res);
-		res = new Main().climbStairs(4);//5
+//		res = new Main().climbStairs(1);//1
+//		System.out.println(res);
+//		res = new Main().climbStairs(2);//2
+//		System.out.println(res);
+//		res = new Main().climbStairs(3);//3
+//		System.out.println(res);
+		res = new Main().climbStairsOrigin(4);//5
 		System.out.println(res);
 	}
 
@@ -56,10 +56,13 @@ public class Main {
 		if (currentI >= n) {
 			return 1;
 		}
+		if(memo[currentI] != 0) {
+			return memo[currentI];
+		}
 
 		int val1 = saikiOrigin(n, currentI + 1, memo);
 		int val2 = saikiOrigin(n, currentI + 2, memo);
-
+		memo[currentI] = val1 + val2;
 		return val1 + val2;
 
 	}
