@@ -11,16 +11,16 @@ public class Main {
 		ListNode l1 = null;
 		ListNode l2 = null;
 
-		l1 = new ListNode(0);
-		l1.next = new ListNode(9);
-		l1.next.next = new ListNode(1);
-		l1.next.next.next = new ListNode(2);
-		l1.next.next.next.next = new ListNode(4);
-		l2 = new ListNode(3);
-		l2.next = l1.next.next.next;
-		l2.next.next = l1.next.next.next.next;
-		res = new Main().getIntersectionNode(l1, l2);//6
-		System.out.println(res);
+		//		l1 = new ListNode(0);
+		//		l1.next = new ListNode(9);
+		//		l1.next.next = new ListNode(1);
+		//		l1.next.next.next = new ListNode(2);
+		//		l1.next.next.next.next = new ListNode(4);
+		//		l2 = new ListNode(3);
+		//		l2.next = l1.next.next.next;
+		//		l2.next.next = l1.next.next.next.next;
+		//		res = new Main().getIntersectionNode(l1, l2);//6
+		//		System.out.println(res);
 
 		l1 = new ListNode(4);
 		l1.next = new ListNode(1);
@@ -36,44 +36,44 @@ public class Main {
 		res = new Main().getIntersectionNode(l1, l2);//6
 		System.out.println(res);
 
-		l1 = new ListNode(1);
-		l1.next = new ListNode(3);
-		l1.next.next = new ListNode(5);
-		l1.next.next.next = new ListNode(7);
-		l1.next.next.next.next = new ListNode(9);
-		l1.next.next.next.next.next = new ListNode(11);
-		l1.next.next.next.next.next.next = new ListNode(13);
-		l1.next.next.next.next.next.next.next = new ListNode(15);
-		l1.next.next.next.next.next.next.next.next = new ListNode(17);
-		l1.next.next.next.next.next.next.next.next.next = new ListNode(19);
-		l2 = l1.next.next.next.next.next.next.next;
-		l2.next = l1.next.next.next.next.next.next.next.next;
-		l2.next.next = l1.next.next.next.next.next.next.next.next.next;
-		res = new Main().getIntersectionNode(l1, l2);//6
-		System.out.println(res);
-
-		l1 = new ListNode(1);
-		l1.next = new ListNode(3);
-		l1.next.next = new ListNode(5);
-		l1.next.next.next = new ListNode(7);
-		l1.next.next.next.next = new ListNode(9);
-		l1.next.next.next.next.next = new ListNode(11);
-		l1.next.next.next.next.next.next = new ListNode(13);
-		l1.next.next.next.next.next.next.next = new ListNode(15);
-		l1.next.next.next.next.next.next.next.next = new ListNode(17);
-		l1.next.next.next.next.next.next.next.next.next = new ListNode(19);
-		l2 = new ListNode(1);
-		l2.next = new ListNode(3);
-		l2.next.next = new ListNode(5);
-		l2.next.next.next = new ListNode(7);
-		l2.next.next.next.next = new ListNode(9);
-		l2.next.next.next.next.next = new ListNode(11);
-		l2.next.next.next.next.next.next = new ListNode(13);
-		l2.next.next.next.next.next.next.next = new ListNode(15);
-		l2.next.next.next.next.next.next.next.next = l1.next.next.next.next.next.next.next.next;
-		l2.next.next.next.next.next.next.next.next.next = l1.next.next.next.next.next.next.next.next.next;
-		res = new Main().getIntersectionNode(l1, l2);//6
-		System.out.println(res);
+		//		l1 = new ListNode(1);
+		//		l1.next = new ListNode(3);
+		//		l1.next.next = new ListNode(5);
+		//		l1.next.next.next = new ListNode(7);
+		//		l1.next.next.next.next = new ListNode(9);
+		//		l1.next.next.next.next.next = new ListNode(11);
+		//		l1.next.next.next.next.next.next = new ListNode(13);
+		//		l1.next.next.next.next.next.next.next = new ListNode(15);
+		//		l1.next.next.next.next.next.next.next.next = new ListNode(17);
+		//		l1.next.next.next.next.next.next.next.next.next = new ListNode(19);
+		//		l2 = l1.next.next.next.next.next.next.next;
+		//		l2.next = l1.next.next.next.next.next.next.next.next;
+		//		l2.next.next = l1.next.next.next.next.next.next.next.next.next;
+		//		res = new Main().getIntersectionNode(l1, l2);//6
+		//		System.out.println(res);
+		//
+		//		l1 = new ListNode(1);
+		//		l1.next = new ListNode(3);
+		//		l1.next.next = new ListNode(5);
+		//		l1.next.next.next = new ListNode(7);
+		//		l1.next.next.next.next = new ListNode(9);
+		//		l1.next.next.next.next.next = new ListNode(11);
+		//		l1.next.next.next.next.next.next = new ListNode(13);
+		//		l1.next.next.next.next.next.next.next = new ListNode(15);
+		//		l1.next.next.next.next.next.next.next.next = new ListNode(17);
+		//		l1.next.next.next.next.next.next.next.next.next = new ListNode(19);
+		//		l2 = new ListNode(1);
+		//		l2.next = new ListNode(3);
+		//		l2.next.next = new ListNode(5);
+		//		l2.next.next.next = new ListNode(7);
+		//		l2.next.next.next.next = new ListNode(9);
+		//		l2.next.next.next.next.next = new ListNode(11);
+		//		l2.next.next.next.next.next.next = new ListNode(13);
+		//		l2.next.next.next.next.next.next.next = new ListNode(15);
+		//		l2.next.next.next.next.next.next.next.next = l1.next.next.next.next.next.next.next.next;
+		//		l2.next.next.next.next.next.next.next.next.next = l1.next.next.next.next.next.next.next.next.next;
+		//		res = new Main().getIntersectionNode(l1, l2);//6
+		//		System.out.println(res);
 	}
 
 	public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
