@@ -15,6 +15,24 @@ public class Main {
 
 	public int[] twoSum2(int[] numbers, int target) {
 
+		/*
+		 * sortされている前提
+		 */
+		int right = numbers.length - 1;
+		int left = 0;
+		while (numbers[left] + numbers[right] != target) {
+			if (numbers[left] + numbers[right] < target) {
+				left++;
+			} else {
+				right--;
+			}
+		}
+		return new int[] { left + 1, right + 1 };
+
+	}
+
+	public int[] twoSum2Origin(int[] numbers, int target) {
+
 		Map<Integer, Integer> wk = new HashMap<Integer, Integer>();
 		for (int i = 0; i < numbers.length; i++) {
 			wk.put(numbers[i], i + 1);
